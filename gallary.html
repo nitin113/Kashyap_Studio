@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Container Class for Centered Layout */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Gallery Section */
+  .gallery-container {
+    margin: 20px;
+  }
+  
+  /* Individual Gallery */
+  .gallery {
+    margin-bottom: 40px;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Grid Layout */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on images */
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>My Photo Gallery</h1>
+      <h5 style="margin-top: 4px;inline-size:auto;color: rgb(197, 238, 156);">Kashyap Studio</h5>
+    </div>
+  </header>
+
+  <div class="gallery-container">
+    <div class="gallery">
+      <h2>Nature</h2>
+      <div class="image-grid">
+        <img src="nature 1.jpg" alt="Nature Image 1">
+        <img src="nature2.jpg" alt="Nature Image 2">
+        <img src="nature 3.webp" alt="Nature Image 3">
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h2>Animals</h2>
+      <div class="image-grid">
+        <img src="animal1.jpg" alt="Animal Image 1">
+        <img src="animal2.jpg" alt="Animal Image 2">
+        <img src="animal3.jpg" alt="Animal Image 3">
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h2>Weddings</h2>
+      <div class="image-grid">
+        <img src="wedding1.jpg" alt="Wedding Image 1">
+        <img src="wedding2.jpg" alt="wedding Image 2">
+        <img src="wedding3.jpg" alt="wedding Image 3">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Photo Gallery. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
